@@ -8,6 +8,16 @@
 .catalog-hero .hero-actions{gap:16px 22px}
 .catalog-hero .hero-copy{max-width:400px}
 .hero-figure.hero-portrait{width:min(100%,426px);justify-self:center}
+.spa-player{width:100%;min-width:0;background:#e8e9e1}
+.spa-player video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#22291f}
+.spa-player video[hidden],.spa-player img[hidden]{display:none}
+.video-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 14px;border:1px solid var(--line);background:var(--paper,#f6f4ee)}
+.video-controls[hidden]{display:none}
+.video-controls button{min-height:44px;padding:6px 3px;font:inherit;font-size:14px;line-height:1.4;color:var(--ink,#272b24);background:transparent;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.video-controls button:hover{color:var(--green,#526345)}
+.video-controls button:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+.video-status:empty{display:none}
+.video-status{margin:0;padding:12px 15px;font-size:14px;line-height:1.5}
 .catalog-card{margin:0}
 .card-cover{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1.5;overflow:hidden;background:#e8e9e1}
 .card-cover img{width:100%;height:100%;object-fit:contain;transition:filter .2s}
