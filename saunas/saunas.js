@@ -88,11 +88,13 @@
   }, { passive:true });
   stage.addEventListener('touchcancel', () => { swipeStart = null; }, { passive:true });
   const sticky = document.getElementById('sticky-reserve');
-  const catalog = document.getElementById('choose');
+  const catalog = document.getElementById('choose') || document.getElementById('reservation');
   const footer = document.querySelector('footer');
   let scheduled = false;
   function updateSticky() {
-    sticky.hidden = catalog.getBoundingClientRect().bottom > 120 || footer.getBoundingClientRect().top < innerHeight;
+    if (!sticky || !catalog || !footer) return;
+    const section = catalog.getBoundingClientRect();
+    sticky.hidden = section.bottom > 120 || footer.getBoundingClientRect().top < innerHeight;
     scheduled = false;
   }
   addEventListener('scroll', () => { if (!scheduled) { requestAnimationFrame(updateSticky); scheduled = true; } }, { passive:true });

@@ -1,0 +1,117 @@
+/* Category and object pages, using the approved NAMETY type and colour system. */
+.nm-header-nav a[aria-current="true"]{border-bottom:1px solid currentColor}
+.breadcrumbs nav{flex-wrap:wrap;gap:5px 12px;align-items:center;line-height:1.6}
+.photo-button{display:block;position:relative;width:100%;padding:0;background:#e8e9e1;text-align:left}
+.photo-button img{width:100%;height:auto;object-fit:contain}
+.photo-button:hover img{filter:brightness(.97)}
+.catalog-hero .hero-photo,.catalog-hero .photo-button{background:transparent}
+.catalog-hero .hero-actions{gap:16px 22px}
+.catalog-hero .hero-copy{max-width:400px}
+.catalog-card{margin:0}
+.card-cover{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1.5;overflow:hidden;background:#e8e9e1}
+.card-cover img{width:100%;height:100%;object-fit:contain;transition:filter .2s}
+.card-cover:has(img+img){gap:10px}
+.card-cover:has(img+img) img{width:calc(50% - 5px)}
+.card-cover:hover img{filter:brightness(.95)}
+.catalog-card .card-intro{min-height:0}
+.catalog-card .card-top h3{font-size:40px}
+.catalog-card .card-top a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+.catalog-card .card-bottom{flex-wrap:wrap;align-items:center;gap:16px}
+.card-actions{display:flex;gap:10px;flex-wrap:wrap}
+.card-actions .button{min-height:48px;padding:12px 18px;white-space:nowrap}
+.catalog-card-wide{grid-column:1/-1;display:grid;grid-template-columns:1.08fr 1fr;gap:44px;align-items:center;padding-top:36px;border-top:1px solid var(--line)}
+.catalog-card-wide:only-child{padding-top:0;border:0}
+.catalog-card-wide .card-top{margin-top:0}
+.catalog-card-wide .card-cover{aspect-ratio:1.5}
+.rest-grid-two{grid-template-columns:1fr 1fr}
+.rest-grid .photo-button{height:auto;aspect-ratio:1.5;overflow:hidden}
+.rest-grid .photo-button img{height:100%;object-fit:contain}
+.room-detail-link{display:block;font-size:14px;text-decoration:underline;text-underline-offset:4px;margin-top:12px}
+.category-cross{padding-block:64px 80px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.category-cross img{width:100%;height:auto}
+.category-cross h2{font-size:50px}
+.category-cross p:not(.kicker){color:var(--muted);margin-top:20px;max-width:420px}
+.category-cross .button{margin-top:25px}
+.detail-hero{grid-template-columns:1fr 1.16fr;gap:55px;padding-bottom:44px}
+.detail-hero h1{font-size:76px;max-width:500px}
+.detail-hero .hero-copy{font-size:18px;max-width:410px}
+.detail-hero .hero-actions{gap:18px}
+.detail-hero-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;aspect-ratio:1.25;background:#e8e9e1}
+.detail-hero-pair .photo-button{min-width:0;min-height:0;height:100%;overflow:hidden}
+.detail-hero-pair img{height:100%;object-fit:contain}
+.detail-layout{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:70px;align-items:start;padding-block:65px 15px}
+.detail-story{grid-column:1;grid-row:1;min-width:0}
+.detail-section{padding-bottom:48px;margin-bottom:48px;border-bottom:1px solid var(--line);scroll-margin-top:100px}
+.detail-section:last-child{margin-bottom:0}
+.detail-section h2{font-size:48px;max-width:650px}
+.detail-section>p:not(.kicker){margin-top:22px;max-width:650px;color:var(--muted)}
+.detail-secondary{margin-top:30px}
+.detail-secondary .photo-button{height:auto;max-height:540px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.detail-secondary img{width:100%;max-height:540px;object-fit:contain}
+.detail-section .rest-grid{margin-top:30px;gap:22px}
+.detail-section .rest-card h3{font-size:31px;line-height:1.15;margin-top:18px}
+.detail-section .rest-card p{font-size:15px;margin-top:10px}
+.detail-tariff{border-left:1px solid #9ca991;padding-left:18px;font-size:15px}
+.included-list{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.included-list li{padding:16px 0 16px 18px;border-bottom:1px solid var(--line);font-size:15px;position:relative}
+.included-list li:before{content:'';position:absolute;left:0;top:27px;width:4px;height:4px;border-radius:50%;background:var(--green)}
+.detail-conditions dl{margin:25px 0 0}
+.detail-conditions dl>div{display:grid;grid-template-columns:130px 1fr;gap:24px;margin-top:18px}
+.detail-conditions dt{font-size:14px;font-weight:600}
+.detail-conditions dd{margin:0;color:var(--muted);font-size:15px}
+.detail-conditions dd a{text-decoration:underline;text-underline-offset:4px}
+.booking-panel{grid-column:2;grid-row:1;position:sticky;top:100px;background:#e9ede3;border:1px solid #d5dccd;padding:28px;scroll-margin-top:16px}
+.booking-panel .kicker{font-size:12px;margin-bottom:15px}
+.booking-panel h2{font-size:36px;line-height:1.1}
+.booking-panel .booking-room{font-size:15px;color:var(--muted);margin-top:18px}
+.booking-panel .price{border-top:1px solid #c9d2c0;margin-top:24px;padding-top:22px;font-size:15px;line-height:1.7}
+.booking-panel .price strong{font-size:29px}
+.booking-panel .price small{font-size:13px}
+.booking-minimum{font-size:14px;margin-top:12px;color:var(--muted)}
+.booking-panel>.button{width:100%;margin-top:20px;font-size:14px;padding-inline:12px}
+.booking-note{font-size:13px;line-height:1.7;color:var(--muted);margin-top:16px}
+.booking-panel>.text-link{margin-top:15px;font-size:13px}
+.booking-panel .room-picker{gap:7px;margin-top:23px}
+.booking-panel .room-picker button{padding:10px 12px;font-size:13px;width:100%;text-align:left}
+.booking-panel .selected-room{margin-top:18px;gap:12px}
+.booking-panel .selected-room p{font-size:13px}
+.related-section{padding-block:20px 75px}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.related-card{min-width:0;display:grid;grid-template-columns:180px 1fr;gap:25px;align-items:center;border-block:1px solid var(--line);padding-block:25px}
+.related-card>img{width:180px;height:155px;object-fit:contain;background:#e8e9e1}
+.related-card h3{font-size:33px;line-height:1.1}
+.related-card p{font-size:14px;color:var(--muted);margin-top:10px}
+.related-card .text-link{margin-top:8px;min-height:35px;font-size:13px}
+.related-card:hover .text-link{color:#5b704b}
+@media(max-width:1100px){
+ .catalog-hero h1{font-size:66px}.detail-hero h1{font-size:65px}.detail-hero{gap:32px}
+ .catalog-card .card-top h3{font-size:36px}.catalog-card-wide{gap:30px}.catalog-card .card-actions{width:100%}
+ .detail-layout{grid-template-columns:minmax(0,1fr) 320px;gap:40px}.booking-panel{padding:24px}
+ .detail-section h2{font-size:43px}.category-cross{gap:40px}.related-card{grid-template-columns:130px 1fr;gap:20px}.related-card>img{width:130px;height:145px}.related-card h3{font-size:29px}
+}
+@media(max-width:850px){
+ .catalog-card .card-top{display:block}.catalog-card .capacity{padding-top:7px}.catalog-card .card-actions .button{flex:1;width:auto;min-width:0;padding-inline:12px}
+ .catalog-card .card-bottom{display:block}.catalog-card .card-actions{margin-top:15px}
+ .catalog-card-wide{grid-template-columns:1fr 1fr;gap:24px}.catalog-card-wide .card-cover{aspect-ratio:1.1}
+ .rest-grid.rest-grid-two .rest-card:last-child{grid-column:auto;max-width:none}
+ .detail-hero h1{font-size:56px}.detail-hero .hero-copy{font-size:16px}.detail-hero .hero-actions{gap:12px}
+ .detail-layout{grid-template-columns:minmax(0,1fr) 290px;gap:30px}.booking-panel{padding:20px}.booking-panel h2{font-size:31px}
+ .detail-section h2{font-size:39px}.detail-section .rest-grid{grid-template-columns:1fr}.detail-section .rest-card:last-child{grid-column:auto;max-width:none}
+ .included-list{grid-template-columns:1fr}.detail-conditions dl>div{grid-template-columns:1fr;gap:3px}
+ .category-cross h2{font-size:44px}.related-card{display:block}.related-card>img{width:100%;height:220px;margin-bottom:20px}
+}
+@media(max-width:680px){
+ .catalog-hero{grid-template-columns:1fr}.catalog-hero h1{font-size:60px}.catalog-hero .hero-copy{font-size:17px}.catalog-hero .hero-actions{flex-direction:row;align-items:center;gap:14px 22px}
+ .catalog-card .card-top{display:flex;align-items:center}.catalog-card .capacity{padding-top:0}.catalog-card .card-top h3{font-size:37px}
+ .catalog-card{margin-bottom:38px}.catalog-card-wide{display:block;padding-top:30px}.catalog-card-wide .card-cover{aspect-ratio:1.5}.catalog-card-wide .card-top{margin-top:20px}
+ .catalog-card .card-bottom{margin-top:20px}.catalog-card .price strong{font-size:25px}.catalog-card .card-actions{display:flex;flex-wrap:nowrap;gap:10px}.catalog-card .card-actions .button{min-height:50px;font-size:14px}
+ .rest-grid-two{grid-template-columns:1fr}.category-cross{grid-template-columns:1fr;gap:28px;padding-block:40px 50px}.category-cross h2{font-size:43px}.category-cross .button{margin-top:20px}
+ .detail-hero{grid-template-columns:1fr;gap:28px;padding-top:28px;padding-bottom:28px}.detail-hero h1{font-size:61px;max-width:400px}.detail-hero .hero-copy{font-size:17px;max-width:440px}.detail-hero .hero-actions{flex-direction:row;align-items:center;gap:20px}.detail-hero-pair{aspect-ratio:1.25}
+ .detail-layout{display:grid;grid-template-columns:1fr;gap:42px;padding-top:32px}.booking-panel{grid-row:1;grid-column:1;position:static;padding:25px}.detail-story{grid-row:2;grid-column:1}
+ .booking-panel h2{font-size:35px}.booking-panel .room-picker{display:grid;grid-template-columns:1fr 1fr}.booking-panel .room-picker button{font-size:13px;text-align:center;padding:11px 8px}
+ .booking-panel .price{margin-top:22px;padding-top:20px}.booking-panel .price strong{font-size:29px}.booking-panel>.button{min-height:52px;font-size:15px}.booking-note{font-size:14px}.booking-panel>.text-link{font-size:14px}
+ .detail-section{padding-bottom:35px;margin-bottom:35px}.detail-section h2{font-size:42px}.detail-section>p:not(.kicker){font-size:16px;margin-top:19px}.detail-secondary{margin-top:24px}.detail-secondary .photo-button,.detail-secondary img{max-height:450px}
+ .detail-section .rest-grid{grid-template-columns:1fr;gap:30px}.detail-section .rest-card h3{font-size:34px}.included-list{grid-template-columns:1fr 1fr;gap:0 20px}.included-list li{font-size:14px}
+ .detail-conditions dl>div{margin-top:20px}.related-section{padding-bottom:45px}.related-grid{grid-template-columns:1fr;gap:22px}.related-card{display:grid;grid-template-columns:120px 1fr;gap:20px;padding-block:20px}.related-card>img{height:150px;width:120px;margin:0}.related-card h3{font-size:31px}.related-card p{font-size:13px}
+}
+@media(max-width:390px){.catalog-hero h1,.detail-hero h1{font-size:54px}.catalog-card .card-top h3{font-size:33px}.booking-panel{padding:20px}.booking-panel .room-picker button{font-size:12px}.related-card{grid-template-columns:100px 1fr;gap:17px}.related-card>img{width:100px;height:140px}.related-card h3{font-size:29px}.included-list{grid-template-columns:1fr}}
