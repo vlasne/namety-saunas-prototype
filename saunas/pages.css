@@ -7,6 +7,7 @@
 .catalog-hero .hero-photo,.catalog-hero .photo-button{background:transparent}
 .catalog-hero .hero-actions{gap:16px 22px}
 .catalog-hero .hero-copy{max-width:400px}
+.hero-figure.hero-portrait{width:min(100%,426px);justify-self:center}
 .catalog-card{margin:0}
 .card-cover{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1.5;overflow:hidden;background:#e8e9e1}
 .card-cover img{width:100%;height:100%;object-fit:contain;transition:filter .2s}
